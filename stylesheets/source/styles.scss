@@ -171,7 +171,7 @@ section.form-container {
     height: 60%;
 
     > h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-top: 20px;
     }
 }
@@ -191,6 +191,10 @@ form.register-form {
         > label {
             display: block;
             font-size: .9em;
+            
+            > span {
+                color: red;
+            }
         }
 
         > input {
@@ -200,6 +204,34 @@ form.register-form {
             color: black;
             font-size: 1.2rem;
             border-radius: 6px;
+        }
+
+        > input:focus {
+            outline: none;
+        }
+        
+        > input:invalid {
+            border: 3px solid red;
+        }
+
+        > input:valid {
+            border:3px solid rgb(8, 184, 8);
+        }
+
+        > input:valid:not(input:focus) {
+            background-color: rgb(8, 184, 8);
+        }
+
+        > input:optional:valid:placeholder-shown{
+            background-color: white;
+        }
+
+        > input::placeholder {
+            color: #ccc;
+        }
+
+        > input:placeholder-shown {
+            border: 1px solid #222;
         }
      }
 }
@@ -220,7 +252,17 @@ footer.footer-container {
             color: white;
             background-color: #2196f3;
             padding: 10px 50px;
+            border: 1px solid #bbb;
             border-radius: 6px;
+        }
+    
+        > button:hover {
+            background-color:#26c6da;
+            cursor: pointer;
+        }
+
+        > button:active {
+            box-shadow: inset 0px 0px 7px 7px #1b8694;
         }
      }
 

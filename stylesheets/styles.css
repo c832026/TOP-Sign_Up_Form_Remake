@@ -168,7 +168,7 @@ section.form-container {
   height: 60%;
 }
 section.form-container > h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 20px;
 }
 
@@ -184,6 +184,9 @@ form.register-form li > label {
   display: block;
   font-size: 0.9em;
 }
+form.register-form li > label > span {
+  color: red;
+}
 form.register-form li > input {
   padding: 10px 20px;
   width: 90%;
@@ -191,6 +194,27 @@ form.register-form li > input {
   color: black;
   font-size: 1.2rem;
   border-radius: 6px;
+}
+form.register-form li > input:focus {
+  outline: none;
+}
+form.register-form li > input:invalid {
+  border: 3px solid red;
+}
+form.register-form li > input:valid {
+  border: 3px solid rgb(8, 184, 8);
+}
+form.register-form li > input:valid:not(input:focus) {
+  background-color: rgb(8, 184, 8);
+}
+form.register-form li > input:optional:valid:placeholder-shown {
+  background-color: white;
+}
+form.register-form li > input::placeholder {
+  color: #ccc;
+}
+form.register-form li > input:placeholder-shown {
+  border: 1px solid #222;
 }
 
 div.submit-btn-container {
@@ -207,7 +231,15 @@ footer.footer-container div.submit-btn-container > button {
   color: white;
   background-color: #2196f3;
   padding: 10px 50px;
+  border: 1px solid #bbb;
   border-radius: 6px;
+}
+footer.footer-container div.submit-btn-container > button:hover {
+  background-color: #26c6da;
+  cursor: pointer;
+}
+footer.footer-container div.submit-btn-container > button:active {
+  box-shadow: inset 0px 0px 7px 7px #1b8694;
 }
 footer.footer-container div.log-in-prompt {
   font-size: 1.2rem;
