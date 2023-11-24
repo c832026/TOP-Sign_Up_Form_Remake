@@ -20,19 +20,45 @@
                 <h2>
                     <p>
                         This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                        Sign up <em>now</em> to get started.
+                        <br><span class="blue-text">Sign up</span> <em>now</em> to get started.<br><span class="rainbow-text">You <em>know</em> you want to.</span>
                     </p>
-                    <p>You <em>know</em> you want to.</p>
                 </h2>
             </header>
             <section class="form-container">
                 <h2>Let's do this!</h2>
-                <form>
+                <form class="register-form" id="my-form" method="post" action="">
+                    <ol>
+                        <li>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="fName" required>
+                        </li>
+                        <li>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="lName" required>
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="userEmail" required>
+                        </li>
+                        <li>
+                            <label for="phone-number">PHONE</label>
+                            <input type="tel" id="phone-number" name="userPhone">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="userPassword" required>
+                        </li>
+                        <li>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirmPassword" required>
+                        </li>
+                    </ol>
                 </form>
             </section>
             <footer class="footer-container">
-                <div>
-                    <p>Already have an account?> <a href="">Log in</a></p>
+                <div class="submit-btn-container"><button type="submit" form="my-form">Submit</button></div>
+                <div class="log-in-prompt">
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </div>
             </footer>
         </div>

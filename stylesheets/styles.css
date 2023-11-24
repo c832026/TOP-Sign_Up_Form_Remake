@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -100,7 +101,7 @@ div.background-container {
 }
 
 .right-container {
-  border: 1px solid #fff;
+  background: black;
 }
 
 div.speech-bubble {
@@ -128,6 +129,9 @@ div.speech-bubble :after {
   margin-top: -22px;
   margin-left: -44px;
 }
+div.speech-bubble > p {
+  font-family: "Pixelify Sans", sans-serif;
+}
 
 img.sans-img {
   width: 250px;
@@ -137,6 +141,80 @@ img.sans-img {
 img.odin-icon {
   width: 1em;
   height: 1em;
+}
+
+header.header-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+header.header-container h2 {
+  font-size: 1.6rem;
+  line-height: 3ch;
+  padding-right: 100px;
+}
+header.header-container h2 span.blue-text {
+  color: #08c3d4;
+}
+header.header-container h2 span.rainbow-text {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.form-container {
+  height: 60%;
+}
+section.form-container > h2 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+form.register-form > ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+form.register-form li {
+  width: 50%;
+  margin-top: 40px;
+}
+form.register-form li > label {
+  display: block;
+  font-size: 0.9em;
+}
+form.register-form li > input {
+  padding: 10px 20px;
+  width: 90%;
+  margin-top: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+div.submit-btn-container {
+  height: 50%;
+}
+
+footer.footer-container {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+footer.footer-container div.submit-btn-container > button {
+  color: white;
+  background-color: #2196f3;
+  padding: 10px 50px;
+  border-radius: 6px;
+}
+footer.footer-container div.log-in-prompt {
+  font-size: 1.2rem;
+}
+footer.footer-container div.log-in-prompt > p {
+  display: inline-block;
+  vertical-align: -20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
