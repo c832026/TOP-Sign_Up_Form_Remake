@@ -63,6 +63,80 @@ textarea {
 
 *, *::before, *::after {
   box-sizing: border-box;
+  color: white;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 6rem;
+  background-color: rgb(0, 0, 0);
+}
+h1 > span {
+  padding-right: 25px;
+}
+
+div.background-container {
+  background-image: url("../../media/undertale-background.jpg");
+  background-size: 100vw 100vh;
+  height: 100vh;
+  display: flex;
+  gap: 20%;
+}
+
+.left-container,
+.right-container {
+  width: 50%;
+  height: 70%;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-container {
+  border: 1px solid #fff;
+}
+
+div.speech-bubble {
+  position: relative;
+  background: #08c3d4;
+  border-radius: 0.4em;
+  height: 100px;
+  left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+div.speech-bubble :after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 44px solid transparent;
+  border-right-color: #08c3d4;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -22px;
+  margin-left: -44px;
+}
+
+img.sans-img {
+  width: 250px;
+  height: 250px;
+}
+
+img.odin-icon {
+  width: 1em;
+  height: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
